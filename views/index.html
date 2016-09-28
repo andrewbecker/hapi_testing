@@ -10,7 +10,7 @@
 	  </div>
 	  <div class="hero_right">
 	    <div class="hero_add_to_cart btn">Add to Cart</div>
-	    <span class="hero_price">$1200</span>
+	    <span class="hero_price"></span>
 	  </div>
 	  <div class="clearfix"></div>
 	</div>
@@ -22,6 +22,9 @@
 				<p class="product_description">{{description}}</p>
 				<span class="product_price">${{pricing.price.selling}}</span>
 				<div class="btn product_btn">View More</div>
+				{{#each marketingBullets}}
+					<li>{{this}}</li>
+				{{/each}}
 			</div>
 		{{/each}}
 	</div>

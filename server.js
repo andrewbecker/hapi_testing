@@ -36,7 +36,7 @@ server.register(require('inert'), (err) => {
 		path: '/{file*}',
 		handler: {
 			directory: {
-				path: 'public'
+				path: 'client_assets'
 			}
 		}
 	});
