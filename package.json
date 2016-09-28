@@ -4,7 +4,9 @@
   "description": "A simple hapi server",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "up": "npm install && gulp && npm start",
+    "s": "gulp && npm start"
   },
   "author": "",
   "license": "ISC",

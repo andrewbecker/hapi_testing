@@ -22,9 +22,11 @@
 				<p class="product_description">{{description}}</p>
 				<span class="product_price">${{pricing.price.selling}}</span>
 				<div class="btn product_btn">View More</div>
-				{{#each marketingBullets}}
-					<li>{{this}}</li>
-				{{/each}}
+				<div class="marketing_bullets">
+					{{#each marketingBullets}}
+						<li>{{this}}</li>
+					{{/each}}
+				</div>
 			</div>
 		{{/each}}
 	</div>

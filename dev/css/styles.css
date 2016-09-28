@@ -106,7 +106,7 @@ html {
 
 /* Products */
 .product_area { margin-top: 20px; }
-.product_area li { display: none; }
+.product_area .marketing_bullets { display: none; }
 .product_area .product_card { width: 32%; margin-right: 2%; margin-bottom: 20px; border: 2px solid #bfbfbf; float: left; background-color: #e5e5e5; }
 .product_area .product_card:nth-child(3n+3) { margin-right: 0; }
 .product_area .product_image { display: block; margin: 40px auto; }

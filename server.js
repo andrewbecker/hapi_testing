@@ -27,7 +27,7 @@ server.register(Vision, function (err) {
 	});
 });
 
-// Register js scripts
+// Register static files
 server.register(require('inert'), (err) => {
 	if (err) { throw err; }
 

@@ -32,3 +32,5 @@ gulp.task('js', function() {
 		.pipe(uglify())
 		.pipe(gulp.dest(filePaths.prod.js));
 });
+
+gulp.task('default', ['minifyCSS', 'js']);
