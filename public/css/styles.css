@@ -1,0 +1,126 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+/* Begin my CSS */
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: sans-serif;
+}
+
+.clearfix { clear: both; }
+
+.page_container {
+	background-color: #FFFFFF;
+	max-width: 960px;
+	margin: 20px auto;
+	padding: 0px 0.5%;
+}
+
+.btn {
+	border: 2px solid #727272;
+	background-color: #b7b7b7;
+	text-align: center;
+	padding: 10px 0;
+	margin: 20px;
+}
+.btn:hover { cursor: pointer; }
+
+/* Hero */
+.hero {
+	background-color: #e5e5e5;
+	border: 2px solid #bfbfbf;
+	position: relative;
+	display: none;
+}
+.hero .hero_left { width: 150px; height: 150px; float: left; padding: 5px 20px; position: absolute; top: 10px; left: 0  }
+.hero .hero_center { width: 71%; float: left; padding: 20px 20px 20px 186px; }
+.hero .hero_right { width: 29%; float: left;  }
+.hero .hero_image { width: 150px; height: 150px; }
+.hero .hero_list { list-style-type: disc; margin-left: 20px; margin-top: 15px; line-height: 24px;}
+.hero .hero_price {
+	display:block;
+	text-align: center;
+	font-size: 20px;
+	margin-top: 25px;
+}
+
+@media screen and (max-width: 768px) {
+	.hero .hero_center { width: 100%; }
+	.hero .hero_right { width: 257px; float: none; clear: both; padding-bottom: 20px; padding-top: 5px; margin: 0px auto; }
+}
+
+@media screen and (max-width: 500px) {
+	.hero .hero_left { position: static; width: 100%; }
+	.hero .hero_image { display: block; margin: 0px auto; }
+	.hero .hero_center { width: 100%; padding: 20px 30px; }
+	.hero .hero_center h1 { text-align: center; }
+	.hero .hero_right { width: 100%; }
+}
+
+/* Products */
+.product_area { margin-top: 20px; }
+.product_area .product_card { width: 32%; margin-right: 2%; margin-bottom: 20px; border: 2px solid #bfbfbf; float: left; background-color: #e5e5e5; }
+.product_area .product_card:nth-child(3n+3) { margin-right: 0; }
+.product_area .product_image { display: block; margin: 40px auto; }
+.product_area .product_description { text-align: center; padding: 0px 30px; height: 64px; }
+.product_area .product_price { display: block; padding: 40px 0 20px 0; text-align: center; font-size: 20px; }
+.product_area .product_btn { font-size: 20px; }
+
+@media screen and (max-width: 768px ) {
+	.product_area .product_card { width: 48%; margin-right: 1%; margin-left: 1%; }
+	.product_area .product_card:nth-child(3n+3) { margin-right: 1%; }
+}
+
+@media screen and (max-width: 500px ) {
+	.hero { display: none; }
+	.product_area .product_card { width: 100%; margin-right: 0; margin-left: 0; }
+	.product_area .product_card:nth-child(3n+3) { margin-right: 0; }
+}
