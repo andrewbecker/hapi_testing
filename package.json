@@ -11,9 +11,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.14.0",
     "handlebars": "^4.0.5",
     "hapi": "^15.0.3",
     "inert": "^4.0.2",
+    "lodash": "^4.16.2",
     "vision": "^4.1.0"
   },
   "devDependencies": {
