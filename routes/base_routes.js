@@ -19,6 +19,7 @@ module.exports = [
 					}
 
 				}, function (err) {
+					reply.view('500');
 					console.log(err);
 				});
 		}
